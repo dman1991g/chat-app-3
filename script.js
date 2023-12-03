@@ -5,7 +5,7 @@ const sendChatbtn = document.querySelector(".chat-input span");
 const chatbox = document.querySelector(".chatbox");
 
 let userMessage = null; // Variable to store user's message
-const API_KEY = "OPEN_API_KEY"; // Paste API key her
+const API_KEY = "OPENAI_API_KEY"; // Paste API key her
 const inputInitHeight = chatInput.scrollHeight;
 
 const createChatLi = (message, className) => {
@@ -30,7 +30,7 @@ const generateResponse = (incomingChatli) => {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${API_KEY}`,
+      Authorization: `Bearer ${YOUR_KEY}`,
     },
     body: JSON.stringify({
       model: "gpt-3.5-turbo",
